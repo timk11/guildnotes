@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "group_sharing_backend": {
+      "main": "src/group_sharing_backend/main.mo",
+      "type": "motoko"
+    },
+    "group_sharing_frontend": {
+      "dependencies": [
+        "group_sharing_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/group_sharing_frontend/src/index.html"
+      },
+      "source": [
+        "src/group_sharing_frontend/assets",
+        "dist/group_sharing_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
