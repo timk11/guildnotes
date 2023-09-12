@@ -8,7 +8,7 @@ Users can be added to the app at 5 levels - Owner, Admin, Conqueror, Explorer an
 
 The app features two separate frontends, an Admin Dashboard and an End User Interface. A deployed instance of the Admin Dashboard can be seen at ####. A video demonstration can be seen at https://www.youtube.com/watch?v=bC5XSoSd0Dk.
 
-##Instructions to deploy GuildNotes locally
+## Instructions to deploy GuildNotes locally
 
 1. Install the [Internet Computer SDK](https://internetcomputer.org/docs/current/developer-docs/setup/install/index.mdx).
 
