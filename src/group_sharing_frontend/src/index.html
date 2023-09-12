@@ -1,24 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>group_sharing</title>
-    <base href="/" />
-    <link rel="icon" href="favicon.ico" />
-    <link type="text/css" rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <main>
-      <img src="logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
-    </main>
-  </body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GuildNotes</title>
+  <link type="text/css" rel="stylesheet" href="../assets/main.css" />
+</head>
+
+<body>
+  <img src="../assets/guildnotes_admin_logo.png" alt="GuildNotes">
+  <h2>Login</h2>
+
+  Click this button to log in with an Internet Identity
+  <button id="login">Login</button>
+  <br><br>
+
+  <button id="whoami">Who am I?</button>
+  <section id="whoami_result"></section>
+  
+  <hr />
+  <h2>Roles</h2>
+  
+  <form action="#" id="get_user_role">
+    <label for="user_id">User identity: </label>
+    <input type="text" id="user_id" name="user_id">
+    <input type="submit" value="Show user level">
+  </form>
+  <section id="user_role"></section>
+  <br>
+  
+  <form action="#" id="get_users_with_role">
+    <label for="role_input">Get users with role: </label>
+    <select id="role_input">
+    <option value='{"Owner":null}'>Owner</option>
+    <option value='{"Admin":null}'>Admin</option>
+    <option value='{"Conqueror":null}'>Conqueror</option>
+    <option value='{"Explorer":null}'>Explorer</option>
+    <option value='{"Player":null}'>Player</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  <section id="users_with_role"></section>
+  <br>
+  
+  <form action="#" id="assignRole">Assign Role:
+    <label for="user_id2">User identity: </label>
+    <input type="text" id="user_id2" name="user_id2">
+    <label for="role_input2">Role:</label>
+    <select id="role_input2">
+    <option value='{"Conqueror":null}'>Conqueror</option>
+    <option value='{"Explorer":null}'>Explorer</option>
+    <option value='{"Player":null}'>Player</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  <section id="updated_role"></section>
+
+  <br>Owner-only functions:<br>
+
+  <form action="#" id="appointAdmin">Appoint Admin:
+    <label for="user_id5">User identity: </label>
+    <input type="text" id="user_id5" name="user_id5">
+    <input type="submit" value="Submit">
+  </form>
+  <section id="aa_result"></section>
+
+  <form action="#" id="appointOwner">Appoint Owner:
+    <label for="user_id6">User identity: </label>
+    <input type="text" id="user_id6" name="user_id6">
+    <input type="submit" value="Submit">
+  </form>
+  <section id="ao_result"></section>
+
+  <form action="#" id="demoteAdmin">Demote Admin:
+    <label for="user_id7">User identity: </label>
+    <input type="text" id="user_id7" name="user_id7">
+    <input type="submit" value="Submit">
+  </form>
+  <section id="da_result"></section>
+
+  <form action="#" id="deleteUser">Delete User:
+    <label for="user_id8">User identity: </label>
+    <input type="text" id="user_id8" name="user_id8">
+    <input type="submit" value="Submit">
+  </form>
+  <section id="du_result"></section>
+
+  <hr />
+
+  <h2>Content</h2>
+  <form action="#" id="updateContent">Update Content:
+    <label for="content_input">New Content:</label>
+    <input type="text" id="content_input" />
+    <label for="role_input4">Role:</label>
+    <select id="role_input4">
+    <option value='{"Owner":null}'>Owner</option>
+    <option value='{"Admin":null}'>Admin</option>
+    <option value='{"Conqueror":null}'>Conqueror</option>
+    <option value='{"Explorer":null}'>Explorer</option>
+    <option value='{"Player":null}'>Player</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+  <section id="updated_content"></section>
+  <br>
+  
+  <form action="#" id="getContent">Get Content:
+    <label for="role_input3">Role:</label>
+    <select id="role_input3">
+    <option value='{"Owner":null}'>Owner</option>
+    <option value='{"Admin":null}'>Admin</option>
+    <option value='{"Conqueror":null}'>Conqueror</option>
+    <option value='{"Explorer":null}'>Explorer</option>
+    <option value='{"Player":null}'>Player</option>
+    </select>
+    <label for="display_as">Display as:</label>
+    <select id="display_as">
+    <option value="HTML">HTML</option>
+    <option value="Text">Text</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+  <section id="show_content"></section>
+  <br><br>
+    
+  <script src="./src/index.js"></script>
+
+</body>
 </html>
