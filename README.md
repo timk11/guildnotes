@@ -6,7 +6,7 @@ vetKeys is still in development and uses a hard-coded master key, so **this app 
 
 Users can be added to the app at 5 levels - Owner, Admin, Conqueror, Explorer and Player. All levels can view encrypted content specific to their own level. Owners and Admins can add new users, view any content and add or modify content for any user level. Owners can also appoint and remove Admins, delete users and appoint other Owners. User content is encrypted with a master key. The master key itself is not stored but is encrypted and stored for each individual user with the user's own identity and role.
 
-The app features two separate frontends, an Admin Dashboard and an End User Interface. A deployed instance of the Admin Dashboard can be seen at https://rctba-eqaaa-aaaao-a2h5q-cai.icp0.io/ and the End User Interface at https://rxuqn-fyaaa-aaaao-a2h6a-cai.icp0.io/. A video demonstration can be seen at https://www.youtube.com/watch?v=bC5XSoSd0Dk.
+The app features two separate frontends, an Admin Dashboard and an End User Interface. A deployed instance of the Admin Dashboard can be seen at https://qb7ig-qiaaa-aaaao-a2h3a-cai.icp0.io/ and the End User Interface at https://qg6os-5qaaa-aaaao-a2h3q-cai.icp0.io/. A video demonstration can be seen at https://www.youtube.com/watch?v=bC5XSoSd0Dk.
 
 ## Instructions to deploy GuildNotes locally
 
